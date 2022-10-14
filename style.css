@@ -24,7 +24,38 @@
     width: 500px;
     height: 50px;
     border-radius: 10px;
-    border: 3.5px solid rgb(224, 224, 224);
+    border: 3px solid rgba(224, 224, 224);
     font-size: xx-large;
     padding-left: 15px;
+    outline: none !important;
+}
+
+/* input:focus {
+    outline: none !important;
+    border-color: rgba(224, 224, 224);
+     box-shadow: 0 0 10px #719ECE; 
+} */
+
+/* validation style */
+input.valid {
+    border-color: #36cc36;
+
+}
+
+input.inValid {
+    border-color: orange;
+
+}
+
+
+input+p {
+    opacity: 0;
+    height: 0;
+    color: orange;
+
+}
+
+input.inValid+p {
+    opacity: 1;
+    height: auto;
 }
